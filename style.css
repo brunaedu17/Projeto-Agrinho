@@ -1,0 +1,178 @@
+@import url(fonte/letters_for_learners.zip);
+
+:root {
+    --primary-color: #df83d0;
+    --secondary-color: #5a3a57;
+    --text-color: #ffffff;
+    --background-color: #441e42;
+    --button-hover: #000000;
+    --font-body: "Chocolate Classical Sans", serif;
+    --font-titulo: "Rakkas", serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+img {
+    max-width: 90%;
+}
+
+
+header {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: var(--font-titulo);
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color:  rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.conteudo {
+    background:  rgb(88, 52, 85);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px  rgba(90, 64, 102, 0.1);
+}
+
+
+ul {
+    list-style-type: square;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+
+.cta-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: var(--button-hover);
+    color:  white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary-color);
+    color:  white;
+}
+
+footer .cta-footer {
+    color:  white;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+footer .cta-footer:hover {
+    text-decoration: underline;
+}
+
+iframe{
+    text-align: center;
+}
+footer .cta-footer:hover {
+    text-decoration: underline;
+}
+
+iframe{
+    text-align: center;
+}
+ 
+#problemas h2 {
+    color: #c471af; 
+}
+
+#problemas h3.enchentes {
+    color: #bb6bb4; 
+}
+
+#problemas h3.calor {
+    color: #bb6bb4; 
+}
+
+#problemas h3.qualidade-vida {
+    color: #bb6bb4; 
+}
+
+#consequencias h2,
+#conclusao h2 {
+    color: #c471af; 
+}
+
+@media (max-width: 768px) {
+    .conteudo {
+        width: 90%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+}
